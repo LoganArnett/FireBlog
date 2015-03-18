@@ -1,0 +1,5 @@
+<div class="post-info" ng-repeat="posts in new.blogPost">
+    {{posts}}
+    <a ui-sref="post({id: new.user.$id, postId: posts.$id})"><h3>{{posts.title}}</h3></a>
+    {{posts.content}}
+</div>
