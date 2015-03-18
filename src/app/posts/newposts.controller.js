@@ -34,7 +34,7 @@ angular.module('fireBlog')
  * later and display
  */
     this.publish = function(post){
-        this.postArray.$add(post)
+        this.blogPost.$add(post)
  // And resets the form       
         return this.newPost = {
             title: '',

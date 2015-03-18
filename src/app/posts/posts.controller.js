@@ -21,5 +21,9 @@ angular.module('fireBlog')
     var postList = new Firebase(Fire.Base.Url + '/Users/' + $stateParams.id + '/posts/' + $stateParams.postId)
     this.blog = $firebaseObject(postList)
     
+    this.blog.$loaded().then(function(post){
+        self.content = post.content;
+    })
+    
 
 })
