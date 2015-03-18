@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fireBlog', ['ngAnimate', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'ui.bootstrap', 'firebase'])
+angular.module('fireBlog', ['ngAnimate', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'ui.bootstrap', 'firebase', 'btford.markdown'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
