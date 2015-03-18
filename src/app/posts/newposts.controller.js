@@ -2,7 +2,7 @@
 
 angular.module('fireBlog')
 
-.controller('NewPostCtrl', function($firebaseObject, $firebaseArray, Fire, Auth){
+.controller('NewPostCtrl', function($firebaseObject, $firebaseArray, Fire, Auth, Restangular){
     var self = this;
   /* Allows controller to check
   * if a user is logged in and
@@ -43,5 +43,8 @@ angular.module('fireBlog')
             date: Date.now(),
         }
     }
-    
+//    customPUT()
+    this.gitPub = function(post){
+      console.log(post.content)
+    }
 })

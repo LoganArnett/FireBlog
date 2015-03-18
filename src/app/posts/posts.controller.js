@@ -25,5 +25,7 @@ angular.module('fireBlog')
         self.content = post.content;
     })
     
+    
+    
 
 })

@@ -1,11 +1,9 @@
 <div class="container-fluid">
 
   <div class="jumbotron text-center">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-        Check Out {{main.user.firstName}}'s RapidFireBlog
-    </p>
-    <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+    <h2>Welcome to The
+      RapidFireBlog: </br> <small>{{main.user.firstName}}</small></h2>
+    <p><a class="btn btn-lg btn-success" ui-sref="newpost"><span class="glyphicon glyphicon-fire"></span> New Post</a></p>
   </div>
   
   <section id="blog-list" ui-view></section>
