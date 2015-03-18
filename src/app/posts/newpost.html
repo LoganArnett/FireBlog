@@ -1,0 +1,14 @@
+<section id="new-post">
+   <h2>New Post</h2>
+    <form ng-submit="new.publish(new.newPost)">
+        <label>Title</label>
+        <input type="text" ng-model="new.newPost.title" style="display:block;">
+<!--
+        <label>Image Route</label>
+        <input type="text" ng-model="new.newPost.img" style="display:block;">
+-->
+        <label>Write it Down!</label>
+        <textarea name="newPost" id="newPost" cols="30" rows="10" ng-model="new.newPost.content" style="display:block;"></textarea>
+        <button class="send" >Publish</button>
+    </form>
+</section>
