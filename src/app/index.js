@@ -3,7 +3,7 @@
 angular.module('fireBlog', ['ngAnimate', 'ngTouch', 'ngSanitize', 'restangular', 'ui.router', 'ui.bootstrap', 'firebase', 'yaru22.md'])
   .config(function ($stateProvider, $urlRouterProvider, RestangularProvider) {
     
-    RestangularProvider.setBaseUrl('https://api.github.com/repos/loganarnett/LoganArnett.github.io/contents/_posts/');
+    
     
     $stateProvider
       .state('home', {
